@@ -4,10 +4,28 @@
         <title>编程不想 Blog</title>
         <link>https://prgrmthkwc.github.io/blog</link>
         <description>编程不想 Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 16 Sep 2022 08:13:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
+        <item>
+            <title><![CDATA[如何利用github搭建免费的网站]]></title>
+            <link>https://prgrmthkwc.github.io/blog/how-to-build-website-on-github</link>
+            <guid>/how-to-build-website-on-github</guid>
+            <pubDate>Fri, 16 Sep 2022 08:13:11 GMT</pubDate>
+            <description><![CDATA[本文档适用于不了解编程的人群。以Windows系统为例。]]></description>
+            <content:encoded><![CDATA[<p>本文档适用于不了解编程的人群。以Windows系统为例。</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="主要依赖">主要依赖<a class="hash-link" href="#主要依赖" title="标题的直接链接">​</a></h2><ol><li>github.com</li><li>Docusaurus</li><li>markdown</li></ol><p>简介：</p><ul><li>github.com</li></ul><ol><li>准备一个Email，在github上注册账号</li><li>在github上创建一个项目，用于管理网站</li><li>需要安装git工具来操作</li></ol><ul><li>Docusaurus</li></ul><p>facebook 的开源项目，快速创建网站
+需要安装Nodejs程序包</p><ul><li>markdown</li></ul><p>专门的<strong>文本格式</strong>，简单，易学易用。
+存储时用.md 作为扩展名，其实是文本文件</p><p>Docusaurus会将md格式转换成网页
+当前文档便是用 markdown格式撰写的。</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="github">github<a class="hash-link" href="#github" title="标题的直接链接">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="安装git-bash">安装git bash<a class="hash-link" href="#安装git-bash" title="标题的直接链接">​</a></h3><ol><li><p><a href="https://git-scm.com/downloads" target="_blank" rel="noopener noreferrer">下载</a></p></li><li><p>安装： 除了默认编辑器选择notepad++以外，其他按默认选项即可。</p></li><li><p>简单配置</p></li></ol><p>创建一个空的用户配置文件（安装nvm时需要用到）：</p><p>$ touch .bash_profile</p><p>设置git的用户名和Email，向仓库提交代码时需要（"<em>引号之间内容按需替换</em>"）</p><p>$ git config --global user.name "PrgrmThk wCodeing"
+$ git config --global user.email "<a href="mailto:PrgrmThk@domain.com" target="_blank" rel="noopener noreferrer">PrgrmThk@domain.com</a>"</p><ol start="4"><li>基本命令</li></ol><p>切换至Z盘下的某个目录：
+$ cd /Z/path/to/dir</p><p>查看当前所在的目录：
+$ pwd</p><p>创建一个目录：
+$ mkdir ptwc</p><p>删除一个目录：
+$ rm -fr dirname
+删除一个或多个文件：
+$ rm -f file1 file2 file3</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="安装-docusaurus">安装 Docusaurus<a class="hash-link" href="#安装-docusaurus" title="标题的直接链接">​</a></h3><p>由于Docusaurus是程序框架，需要安装Nodejs程序来运行。</p><p>可以直接安装Node.js程序，但最好还是用一个包管理器nvm来安装Node.js</p><p>nvm &lt;== Node.js &lt;== Docusaurus</p><ol><li>安装 nvm &amp; node.js</li></ol><p>nvm： <a href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener noreferrer">https://github.com/nvm-sh/nvm</a></p><p>安装nvm：</p><p>$ curl -o- <a href="https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh" target="_blank" rel="noopener noreferrer">https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh</a> | bash</p><p>安装node.js的<strong>长期支持版本</strong>(lts)：</p><p>$ nvm install --lts</p><ol start="2"><li>安装 Docusaurus &amp;&amp; 创建网站</li></ol><p><a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer">https://docusaurus.io/</a></p><p>在我们创建网站的时候，会自行安装Docusaurus</p><p>这条命令将创建一个 ptwc.github.io 目录</p><p>$ npx create-docusaurus@latest ptwc.github.io classic</p><p>$ cd ptwc.github.io</p><p>$ npx docusaurus start</p><ol start="3"><li></li></ol>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://prgrmthkwc.github.io/blog/welcome</link>
